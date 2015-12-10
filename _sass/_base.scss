@@ -64,7 +64,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    /*margin-left: $spacing-unit;*/
 }
 
 li {
@@ -89,11 +89,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $text-color;
     }
 
     &:hover {
@@ -201,4 +201,23 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/* user styles */
+
+.sidebar {
+  padding-top: 50px;
+}
+
+.site-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.nav > li {
+  font-size: 24px;
+}
+
+.nav > li > a {
+  padding: 0;
 }
