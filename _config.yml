@@ -12,3 +12,6 @@ github_username:  loaf-baker
 
 # Build settings
 markdown: kramdown
+
+collections:
+  - gallery
