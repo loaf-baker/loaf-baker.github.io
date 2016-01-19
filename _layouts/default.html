@@ -20,26 +20,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
     <script>
     $(document).ready(function() {
-      $("#header-image")
-      .mouseover(function() {
-        var src = $(this).attr("src").match(/[^\.]+/) + "over.png";
-        $(this).attr("src", src);
-      })
-      .mouseout(function() {
-        var src = $(this).attr("src").replace("over.png", ".png");
-        $(this).attr("src", src);
-      });
 
       $(function() {
 		    $('.pop').on('click', function() {
-			    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			    $('.imagepreview').attr('src', $(this).find('img').attr('src').split('_TN_over')[0] + '.jpg');
 			    $('#imagemodal').modal('show');
 	 	    });
       });
 
     });
-
-
 
     </script>
 

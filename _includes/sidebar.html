@@ -8,17 +8,26 @@
     <div class="line">LARAINE</div>
     <div class="line">BAKER</div>
   </div>
-  <div class="image">
-    <a href="/">
+  <div class="image tint-wrapper-inverted">
+
+    <a href="/" class="tint-inverted">
       <img id="header-image" src="/images/Image.png">
+
     </a>
   </div>
 
   <!-- MAIN NAVIGATION -->
   <div class="nav">
     <ul id="main-nav">
-      <li><a href="/gallery">GALLERY</a></li>
-      <li><a href="/bio">ABOUT</a></li>
+      <li>
+        <a data-toggle="collapse" data-parent="#main-nav" href="#firstLink" class="gallery-pill">GALLERY</a>
+        <ul id="firstLink" class="collapse loaf-dropdown">
+          <li class="text-right"><a href="/painting">PAINTING</a></li>
+          <li class="text-right"><a href="/photo">PHOTO</a></li>
+          <li class="text-right"><a href="/sketchbook">SKETCHBOOK</a></li>
+        </ul>
+      </li>
+      <li><a href="/bio">STATEMENT</a></li>
       <li><a href="/resume">RESUME</a></li>
       <li><a href="/contact">CONTACT</a></li>
     </ul>
