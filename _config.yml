@@ -14,4 +14,5 @@ github_username:  loaf-baker
 markdown: kramdown
 
 collections:
-  - gallery
+  - terrain
+  - gltchwrld

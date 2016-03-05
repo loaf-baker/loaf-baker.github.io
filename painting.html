@@ -4,102 +4,22 @@ title: Painting
 permalink: /painting/
 ---
 
-<div class="carousel">
 
-  <div class="gallery">
-    <div class="collection">
+<div class="collection">
 
-      <div class="row">
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image gall-image" src="/images/franz_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/terrain_black_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/steelrail_01_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/yellowriver_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
+  <h1 class="collection-title">Terrain</h1>
 
-      <div class="row">
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/steelrail_04_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/orange_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/steelrail_white_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/yolks_TN_over.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
-
+    <div>
+      {% for item in site.terrain %}
+      <span class="tint-wrapper">
+        <span class="tint">
+          <a href="{{item.filename}}" data-lightbox="{{item.series}}" data-title="<i>{{item.title}}</i>, {{item.dimensions | smartify}}, {{item.media}}, {{item.year}}" class="pop">
+            <img id="imageresource" class="img-responsive gall-image" src="{{item.thumbnail}}">
+          </a>
+        </span>
+      </span>
+      {% endfor %}
     </div>
-  </div>
 
-</div>
-
-<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="border-radius:0;">
-      <div class="modal-body" style="padding:20px">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
-        <img src="" class="imagepreview" style="width: 100%; margin-bottom: 20px;" >
-        <p style="margin-bottom: 0px;"><em>This is a title</em><br>This is a description</p>
-      </div>
-    </div>
   </div>
 </div>

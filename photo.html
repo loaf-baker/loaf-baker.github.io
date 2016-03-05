@@ -4,101 +4,20 @@ title: Photo
 permalink: /photo/
 ---
 
-<div class="carousel">
+<div class="collection">
 
-  <div class="gallery">
-    <div class="collection">
+  <h1 class="collection-title">Gltch Wrld</h1>
 
-      <div class="row">
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image gall-image" src="/images/franz_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/terrain_black_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/steelrail_01_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/yellowriver_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/steelrail_04_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/orange_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/steelrail_white_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="tint-wrapper">
-            <figure class="tint">
-              <a href="#" class="pop">
-                <img id="imageresource" class="img-responsive gall-image" src="/images/yolks_TN.jpg">
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
-
-    </div>
+  <div>
+    {% for item in site.gltchwrld %}
+    <span class="tint-wrapper">
+      <span class="tint">
+        <a href="{{item.filename}}" data-lightbox="{{item.series}}" data-title="{{item.media}}, {{item.year}}" class="pop">
+          <img id="imageresource" class="img-responsive gall-image" src="{{item.thumbnail}}">
+        </a>
+      </span>
+    </span>
+    {% endfor %}
   </div>
 
-</div>
-
-<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <img src="" class="imagepreview" style="width: 100%;" >
-      </div>
-    </div>
-  </div>
 </div>
