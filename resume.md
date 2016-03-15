@@ -20,7 +20,7 @@ Live Painting & Interactive painting space by Sophie Baker and Emily Binder
 
 ## **2014**
 
-*Branches Mobile Gallery @ Sunset Campout 2014  
+*Branches Mobile Gallery @ Sunset Campout 2014*  
 Sunset Campout 2014, Belden, CA  
 July 25 - 27  
 Five paintings featured in the Branches Mobile Gallery at Sunsest Campout, 2014.  

@@ -11,6 +11,10 @@ a:active {
   text-decoration: none;
 }
 
+a:focus {
+  outline: none;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -74,9 +78,8 @@ a:active {
 /* MAIN */
 
 .main {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 82%;
+  margin: auto;
 }
 
 /* GALLERIES */
@@ -100,6 +103,8 @@ a:active {
 
 .tint-wrapper {
   width: 130px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .tint-wrapper, .tint-wrapper-inverted {
@@ -130,6 +135,10 @@ a:active {
   filter: none;
   background-color: inherit;
   opacity: 1;
+}
+
+.tint-inverted img {
+  width: 150px;
 }
 
 /* RESPONSIVE */
