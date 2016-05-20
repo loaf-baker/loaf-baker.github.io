@@ -26,16 +26,36 @@ a:focus {
   text-decoration: none;
 }
 
-.sidebar .name {
+.name {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.sidebar .name > .line {
-  margin-bottom: 10px;
+.sketchbook .name{
+  margin-bottom: 0;
+}
+
+.name.mirror {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+  margin-bottom: 18px;
+}
+
+.name > .line {
   font-size: 12px;
   letter-spacing: 6px;
   font-weight: bold;
+}
+
+.name > .line:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.name >.line:last-child {
+  line-height: .7em;
 }
 
 .sidebar .nav > ul {
@@ -141,4 +161,25 @@ a:focus {
   width: 150px;
 }
 
+p.subhead {
+  text-align: center;
+  font-size: 8px;
+  letter-spacing: 4px;
+}
+
+.sketchbook .tint-wrapper {
+  width: 200px;
+  border: 10px solid #d8d6d6;
+}
+
+.single-column {
+  width: 640px;
+  margin: auto;
+}
+
 /* RESPONSIVE */
+@media (max-width: 480px) {
+  .single-column {
+    width: 200px;
+  }
+}

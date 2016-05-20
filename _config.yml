@@ -16,3 +16,4 @@ markdown: kramdown
 collections:
   - terrain
   - gltchwrld
+  - sketchbook

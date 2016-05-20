@@ -1,0 +1,39 @@
+---
+layout: empty
+title: Sketchbook
+permalink: /sketchbook/
+---
+
+<div class="sketchbook">
+  <div class="name">
+    <div class="line">SOPHIE</div>
+    <div class="line">LARAINE</div>
+    <div class="line">BAKER</div>
+  </div>
+  <div class="name mirror">
+    <div class="line">SOPHIE</div>
+    <div class="line">LARAINE</div>
+    <div class="line">BAKER</div>
+  </div>
+
+  <p class="subhead">
+    DESIGNS, SKETCHES, FORGOTTON PIECES<br/>
+    DOODLES, STUDIES, EXPERIMENTS, FAVORITES
+  </p>
+
+  <div class="collection single-column">
+
+    <div>
+      {% for item in site.sketchbook %}
+      <span class="tint-wrapper">
+        <span class="tint">
+          <a href="/images/{{item.name}}.jpg" data-lightbox="{{item.series}}" class="pop">
+            <img id="imageresource" class="img-responsive gall-image" src="/images/tn/{{item.name}}_tn.jpg">
+          </a>
+        </span>
+      </span>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
